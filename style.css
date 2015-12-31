@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body {
+  /* Set the animation-name followed by duration in seconds*/
+  /* You can haev this be a suddle change or fast by changing the animation time. Do this in seconds (s) or milliseconds (ms)*/
+  animation: trans_color 30s infinite; 
+  -webkit-animation: trans_color 30s infinite; /* for Safari */
+}
+
+/* Setting the 0% and the 100% colors to the same value helps with keep a smooth loop */
+@keyframes trans_color {
+  0% {background: #47AFC2;}
+  20% {background: #CA947C;}
+  40% {background: #F55F41;}
+  60% {background: #464D5C;}
+  80% {background: #417BF5;}
+  100% {background: #47AFC2;}
+}
+
+/* for Safari */
+@-webkit-keyframes trans_color {
+  0% {background: #47AFC2;}
+  20% {background: #CA947C;}
+  40% {background: #F55F41;}
+  60% {background: #464D5C;}
+  80% {background: #417BF5;}
+  100% {background: #47AFC2;}
+}
+
+#title {
+  width: 40vw;
+  margin: 30vh auto;
+  text-align: center;
+  background: rgba(77,72,92,.7);
+  border-radius: 2px;
+  padding: 30px 5px;
+  color: white;
+  font-family: Lato, sans-serif;
+}
